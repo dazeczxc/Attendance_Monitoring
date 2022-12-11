@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F1087DF9</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF55C0EB</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorStatusBar1">#FF7AA1FC</color>
+    <color name="colorGreen">#FF30E19A</color>
+    <color name="colorUdo">#FF32D3E1</color>
+    <color name="colorHomepage">#FF55C0EB</color>
+    <color name="colorHome">#FF55C0EB</color>
+    <color name="colorLogin">#FFCCD8F2</color>
+    <color name="colorHomeStatusBar">#6AC4EE</color>
+
+
+
+
+
+</resources>

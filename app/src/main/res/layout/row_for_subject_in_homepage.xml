@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/listviewborder"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+            <RelativeLayout
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/colorHome"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/textViewSubjectRow"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Integrative Programming"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:layout_toEndOf="@+id/imageView2" />
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/textViewSectionRow"
+                    android:text="BSIT"
+                    android:textSize="17sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSubjectRow"
+                    android:layout_alignLeft="@+id/textViewSubjectRow"
+                    android:layout_alignStart="@+id/textViewSubjectRow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 AM"
+                    android:textSize="15sp"
+
+                    android:id="@+id/textViewTime"
+                    android:layout_below="@+id/textViewSectionRow"
+                    android:layout_alignLeft="@+id/textViewSectionRow"
+                    android:layout_alignStart="@+id/textViewSectionRow" />
+
+                <TextView
+                    android:id="@+id/textViewDayRow"
+                    android:text="Monday"
+                    android:textSize="15sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTime"
+                    android:layout_alignLeft="@+id/textViewTime"
+                    android:layout_alignStart="@+id/textViewTime" />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:paddingLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="&#8942;"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/txtOptionDigit"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignBottom="@+id/textViewSubjectRow"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+                <ImageView
+                    android:src="@drawable/subj"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageView2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  to  "
+                    android:textSize="15sp"
+                    android:id="@+id/textView12"
+                    android:layout_above="@+id/textViewDayRow"
+                    android:layout_toRightOf="@+id/textViewTime"
+                    android:layout_toEndOf="@+id/textViewTime" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 AM"
+                    android:textSize="15sp"
+                    android:id="@+id/textViewTimeTo"
+                    android:layout_alignTop="@+id/textView12"
+                    android:layout_toRightOf="@+id/textView12"
+                    android:layout_toEndOf="@+id/textView12" />
+
+            </RelativeLayout>
+
+</LinearLayout>

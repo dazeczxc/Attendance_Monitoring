@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.project101">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+    <uses-feature android:name="android.hardware.camera2.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/qrlogo"
+        android:label="CSD Attendance"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="CSD Attendance"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CaptureAct"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Homepage"
+            android:label="Subject"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Attendance_Per_Subject"
+            android:label="@string/title_activity_attendance__per__subject"
+            android:parentActivityName=".Homepage"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Home"
+            android:label="Homepage"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Scan_bg"
+            android:label="scan_bg"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Attendance_from_Home"
+            android:label="Attendance"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Signup_Page" />
+        <activity
+            android:name=".Enrolled"
+            android:label="Students"
+            android:parentActivityName=".Homepage"
+            android:theme="@style/AppTheme" />
+
+
+    </application>
+
+</manifest>

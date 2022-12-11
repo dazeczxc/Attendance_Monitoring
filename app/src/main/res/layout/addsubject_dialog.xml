@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txta"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Subject"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txta"
+        android:id="@+id/Lla"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginRight="65dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:id="@+id/etxtAddSubjectDialog"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Lla"
+        android:id="@+id/Llb"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course - Section:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course - Section"
+            android:id="@+id/etxtAddSectionDialog"
+            android:layout_above="@+id/buttonAddSubject"
+            android:layout_centerHorizontal="true"
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Llb"
+        android:id="@+id/Llx"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginRight="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"/>
+
+        <TextView
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:drawablePadding="1dp"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Start"
+            android:id="@+id/etxtTimeSched"
+            android:layout_above="@+id/buttonAddSubject"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint=" to "
+            android:textStyle="bold"
+            android:id="@+id/textView12w" />
+
+        <TextView
+            android:textSize="17sp"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:drawablePadding="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="End"
+            android:id="@+id/etxtTimeSchedTo" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Llx"
+        android:id="@+id/Llc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Day:"/>
+
+        <TextView
+            android:textSize="17sp"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:id="@+id/etxtSelectedDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Day"/>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_below="@+id/Llc"
+        android:background="@drawable/buttondesignfro_add_subject"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+
+        android:layout_height="wrap_content"
+        android:text="Add Subject"
+        android:id="@+id/buttonAddSubjectDialog"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+
+</RelativeLayout>

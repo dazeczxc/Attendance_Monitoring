@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.project101.Home"
+    tools:showIn="@layout/app_bar_home">
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@+id/linear1"
+    android:background="@drawable/buhomeeee"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bupclogo"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bicol University \nPolangui Campus"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtvCurrentDate"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="June 1 , 2021"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer studies department"
+        android:textAllCaps="true"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_below="@+id/txtvCurrentDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_marginLeft="15dp"
+        android:textSize="17sp"
+        android:id="@+id/textView5"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:layout_alignTop="@+id/txtvCurrentDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView5"
+        android:textSize="18sp"
+        android:id="@+id/txtVName"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name!"
+        />
+
+</RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_below="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradientwhiteblue">
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose an Action:"
+            android:textSize="15dp"
+            android:visibility="invisible"
+            android:textColor="#FFFF5500"
+            android:textStyle="bold"
+            android:id="@+id/textView11"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="5dp"/>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv1"
+                android:layout_below="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="2"
+                android:layout_rowWeight="2"
+                android:elevation="30dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                >
+
+                    <RelativeLayout
+                        android:layout_margin="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textColor="@color/colorHome"
+                            android:id="@+id/txx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View subjects"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imvv"
+                            android:layout_toEndOf="@+id/imvv" />
+
+                        <ImageView
+                            android:layout_marginLeft="10dp"
+
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/subject"
+                            android:id="@+id/imvv"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <Button
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            android:contextClickable="false"
+
+                            android:layout_marginRight="10dp"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/buttondesignfro_add_subject"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Open"
+
+                            android:id="@+id/btnOpenSubj"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_below="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="2"
+            android:elevation="30dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            >
+
+            <RelativeLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@color/colorHome"
+
+                    android:id="@+id/tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Today's \nAttendance"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imv"
+                    android:layout_toEndOf="@+id/imv" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/attendance"
+                    android:id="@+id/imv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:contextClickable="false"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttondesignfro_add_subject"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:id="@+id/btnViewAttendance"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_below="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:elevation="15dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@color/colorHome"
+
+                    android:id="@+id/tx1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check Attendance"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imv1"
+                    android:layout_toEndOf="@+id/imv1" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/scan"
+                    android:id="@+id/imv1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:contextClickable="false"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttondesignfro_add_subject"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="go"
+                    android:id="@+id/btnScanOpen"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

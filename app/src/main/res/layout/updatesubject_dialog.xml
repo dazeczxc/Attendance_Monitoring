@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@color/colorHome"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text1"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Subject"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text1"
+        android:id="@+id/Lla"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginRight="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject:"/>
+
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:id="@+id/editTextInputSubject"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Lla"
+        android:id="@+id/Llb"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course - Section:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course - Section"
+            android:id="@+id/editTextInputSection"
+            android:layout_above="@+id/buttonAddSubject" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Llb"
+        android:id="@+id/Llx"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginRight="83dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"/>
+
+        <TextView
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:drawablePadding="1dp"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Start"
+            android:id="@+id/editTextTime"
+            android:layout_above="@+id/buttonAddSubject" />
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" to "
+            android:id="@+id/sssss"
+            android:layout_above="@+id/buttonAddSubject" />
+
+        <TextView
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:drawablePadding="1dp"
+            android:textSize="17sp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="End"
+            android:id="@+id/editTextTimeTo"
+            android:layout_above="@+id/buttonAddSubject" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Llx"
+        android:id="@+id/Llc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Day:"/>
+
+
+        <TextView
+            android:hint="Select day"
+            android:textSize="17sp"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextInputDay"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:background="@drawable/buttondesignfro_add_subject"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_below="@+id/Llc"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/buttonUpdateSubject"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+
+</RelativeLayout>

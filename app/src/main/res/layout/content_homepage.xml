@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.project101.Homepage"
+    tools:showIn="@layout/app_bar_homepage">
+
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/Rl"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#5ab0ed"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List of Subjects:"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textViewNamePass"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/Rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout">
+
+
+
+        <ListView
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:divider="@null"
+            android:dividerHeight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewHomepageSubject"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:contextClickable="false"
+
+            android:textSize="16sp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttondesignfro_add_subject"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Subject"
+            android:id="@+id/buttonAddSub"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="bottom|end"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

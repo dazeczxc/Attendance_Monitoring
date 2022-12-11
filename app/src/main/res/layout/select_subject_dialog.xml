@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/a"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select subject and Section"/>
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/b"
+        android:orientation="horizontal"
+        android:layout_below="@+id/a"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:id="@+id/z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject: "/>
+
+        <Spinner
+            android:id="@+id/spinnerSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/c"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_below="@+id/b"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Section: "
+            android:id="@+id/textView2" />
+
+        <Spinner
+            android:id="@+id/spinnerSect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        </LinearLayout>
+
+
+    <Button
+        android:layout_below="@+id/c"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:contextClickable="false"
+
+        android:background="@drawable/buttondesignfro_add_subject"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:id="@+id/buttonSelectSubject"
+        android:layout_centerHorizontal="true"
+         />
+</RelativeLayout>
